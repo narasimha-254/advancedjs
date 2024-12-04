@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- welcome
+    register
+    login
+    thankyou -->
+    <script>
+        console.log("Welcome");
+        function register(login){
+            setTimeout(()=>{
+                console.log("Please Register");
+                login();
+            },5000)
+        }
+        function login(thankyou){
+            setTimeout(()=>{
+                console.log("Please Login");
+                thankyou();
+            },3000)
+        }
+        function thankyou(){
+            setTimeout(()=>{
+                console.log("Thank you");
+            },1000)
+        }
+        register(function(){
+            login(function(){
+                thankyou();
+            });
+        });
+        
+        
+    </script>
+</body>
+</html>

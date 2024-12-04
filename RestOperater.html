@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestOperater</title>
+</head>
+<body>
+    <!-- Rest Operater -->
+    <!-- <script>
+        function sampleRest(name,...myCollection){
+            let exampleValue = 0;
+            for(let i in myCollection){
+                exampleValue += myCollection[i];
+            }
+            document.write(name,exampleValue)
+        }
+        sampleRest("Narasimha",10,20,30,40)
+    </script> -->
+
+    <!-- Spread Operater -->
+    <script>
+        const sports = ["cricket","footbal","tennies"]
+        const players = ["Kohli","Richard","Pace"]
+        const coach = ["Gambheer","Amith","Sumith"]
+
+        const group = [...sports,...players,...coach];
+
+        document.write(group+"   <br/>");
+     
+        const surname ={
+            fname:"Parampogu"
+        }
+        const lastname = {
+            lname:"Narasimhudu"
+        }
+        const fullname = {...surname,...lastname}
+        console.log(fullname);
+        document.write(fullname.fname, fullname.lname);
+    </script>
+</body>
+</html>

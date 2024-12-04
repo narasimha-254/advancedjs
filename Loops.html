@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head> 
+    <!-- for of for [array's] -->
+    <!-- for in for Objects -->
+
+
+    <script>
+        const myValues = [1,2,3,4,5]
+        const students = ["Narasimha","Naresh","Nagesh","Nandu","Nikhil"];
+        // forEach method
+
+        /* myValues.forEach(function(a){
+            document.write(a*2+"<br>");
+        })*/
+
+        // for of method
+       /* for(const a of myValues){
+            document.write(a*5+"<br>");
+        } 
+        for(const print of students){
+            document.write(`${print} <br>`);
+        }*/
+        // for in 
+
+        const cites ={
+            one:"Hyderabad",
+            two:"Kurnool",
+            three:"Banglore",
+            four:"Chennai"
+        }
+        for(let x in cites){
+            document.write(cites[x]+"<br>");
+        }
+
+    </script>
+</body>
+</html>
